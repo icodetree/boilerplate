@@ -1,0 +1,16 @@
+{
+  "name": "parcel",
+  "version": "1.0.0",
+  "main": "./src/main.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "node-sass": "^9.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3"
+  }
+}
