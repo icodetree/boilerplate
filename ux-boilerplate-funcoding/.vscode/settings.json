@@ -1,0 +1,108 @@
+/* cSpell:disable */
+{
+  "extensions.ignoreRecommendations": false,
+  "files.exclude": {
+    "**/.vscode": false,
+    "**/node_modules": true,
+    "**/.eslintrc": true,
+    "**/.stylelintrc": false,
+    "**/.editorconfig": true,
+    "**/.gitignore": false,
+    "**/.htmlhintrc": true,
+    "**/.prettierrc": false,
+    "**/.prettierignore": false,
+    "**/jsconfig.json": true,
+    "**/package-lock.json": true,
+    "**/README.md": false
+  },
+
+  // Stylelint
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+
+  // Eslint
+  // "javascript.validate.enable": false,
+  // "typescript.validate.enable": false,
+
+  /* ____________________________________________ */
+  "npm.packageManager": "npm",
+  "npm.scriptExplorerAction": "run",
+
+  /* ____________________________________________ */
+  // Emmet
+  "emmet.excludeLanguages": [],
+  "emmet.includeLanguages": {
+    "postcss": "css",
+    "plaintext": "pug",
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact",
+    "vue-html": "html",
+    "php": "html",
+    "blade": "html",
+    "markdown": "html",
+    // "twig": "html",
+    "hbs": "html",
+    "njk": "html"
+  },
+
+  /* ____________________________________________ */
+  // Files Associations
+  "files.associations": {
+    "*.html": "html",
+    "*.twig": "twig",
+    "*.hbs": "hbs",
+    "*.njk": "njk"
+  },
+
+  "[twig]": {
+    "editor.defaultFormatter": "junstyle.twig-language",
+    "editor.quickSuggestions": {
+      "other": "on",
+      "comments": "off",
+      "strings": "on"
+    }
+  },
+
+  /* ____________________________________________ */
+  /* ____________________________________________ */
+  /* ____________________________________________ */
+  // Config
+  // "stylelint.configFile": "./.vscode/.stylelintrc",
+  // "prettier.configPath": "./.vscode/.prettierrc",
+  // "prettier.ignorePath": "./.vscode/.prettierignore",
+
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.formatOnSave": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
+  "prettier.htmlWhitespaceSensitivity": "ignore",
+  "files.autoSave": "off",
+  "prettier.documentSelectors": [
+    "**/*.html",
+    "**/*.json",
+    "**/*.css",
+    "**/*.scss",
+    "**/*.js"
+  ],
+  "prettier.ignorePath": "./.prettierignore",
+  "prettier.enable": true,
+  "prettier.endOfLine": "lf",
+  "editor.renderWhitespace": "all",
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "prettier.semi": true
+}

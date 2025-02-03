@@ -1,0 +1,11 @@
+# .prettierignore
+lib/
+codinglist.js
+component_guide.js
+convention.html
+semantic01.html
+semantic02.html
+aria.html
+nesting.html
+role.html
+*.csv

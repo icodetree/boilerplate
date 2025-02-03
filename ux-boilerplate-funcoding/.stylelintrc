@@ -1,0 +1,58 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-recommended-scss"
+  ],
+  "plugins": [
+    "stylelint-scss",
+    "./gulp/config/stylelintCustomRules.js"
+  ],
+  "ignoreFiles": [
+    "src/guide/assets/styles/pages/_component_guide.scss",
+    "src/guide/assets/styles/pages/_codinglist.scss",
+    "src/guide/assets/styles/component_guide.css",
+    "src/guide/assets/styles/codinglist.css",
+    "dist/guide/assets/styles/component_guide.css",
+    "dist/guide/assets/styles/codinglist.css"
+  ],
+  "rules": {
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": true,
+    "rule-empty-line-before": null,
+    "no-empty-source": null,
+    "color-hex-length": "long",
+    "declaration-block-no-redundant-longhand-properties": null,
+    "at-rule-empty-line-before": null,
+    "declaration-empty-line-before": null,
+    "media-feature-range-notation": null,
+    "selector-pseudo-element-colon-notation": "double",
+    "comment-empty-line-before": null,
+    "property-no-vendor-prefix": null,
+    "value-no-vendor-prefix": null,
+    "selector-attribute-quotes": null,
+    "no-duplicate-selectors": null,
+    "no-descending-specificity": null,
+    "color-function-notation": null,
+    "alpha-value-notation": null,
+    "at-rule-no-vendor-prefix": null,
+    "shorthand-property-no-redundant-values": null,
+    "length-zero-no-unit": null,
+    "number-max-precision": null,
+    "selector-no-vendor-prefix": null,
+    "font-family-name-quotes": null,
+    "function-url-quotes": null,
+    "plugin/no-block-with-vertical-align": true,
+    "plugin/no-margin-with-inline": true,
+    "plugin/no-positionless-offsets": true,
+    "plugin/no-invalid-class-suffix": true,
+    "plugin/no-invalid-class-prefix": true
+  },
+  "overrides": [
+    {
+      "files": ["**/_variables.scss"],
+      "rules": {
+        "value-keyword-case": null
+      }
+    }
+  ]
+}

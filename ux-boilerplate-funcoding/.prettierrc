@@ -1,0 +1,21 @@
+{
+  "tabWidth": 2,
+  "useTabs": false,
+  "htmlWhitespaceSensitivity": "strict",
+  "endOfLine": "lf",
+  "printWidth": 440,
+  "overrides": [
+    {
+      "files": "gulp/**/*.js",
+      "options": {
+        "printWidth": 80
+      }
+    },
+    {
+      "files": "gulp/**/paths.js",
+      "options": {
+        "printWidth": 440
+      }
+    }
+  ]
+}
