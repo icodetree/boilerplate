@@ -1,0 +1,71 @@
+@use "../abstracts" as *;
+
+/* component button */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: middle;
+  @include rem(min-height, 45);
+  @include rem(padding, 0 30);
+  border: 1px solid $line-000000;
+  background: $bg-ffffff;
+  @include rem(border-radius, 5);
+
+  // button 공통 - 텍스트
+  .btn-txt {
+    @include f14;
+    color: $font-000000;
+  }
+
+  // button 공통 -  icon
+  [class^="ico-"] {
+    @include rem(width, 15);
+    @include rem(height, 15);
+  }
+
+  // button 공통 - Hover, Focus
+  &:focus,
+  &:hover {
+    border-color: blue;
+    .btn-txt {
+      color: blue;
+    }
+  }
+
+  // button 공통 - Full
+  &.btn-full {
+    width: 100%;
+    justify-content: center;
+  }
+
+  // button 공통 - Primary
+  &.btn-primary {
+    border-color: blue;
+    background: blue;
+    .btn-txt {
+      color: $font-ffffff;
+    }
+    &:focus,
+    &:hover {
+      background: $font-ffffff;
+      .btn-txt {
+        color: blue;
+      }
+    }
+  }
+}
+
+/* component button Group */
+.component-btns {
+  display: flex;
+  justify-content: center;
+  .btn + .btn {
+    @include rem(margin-left, 10);
+  }
+  &.align-right {
+    justify-content: flex-start;
+  }
+  &.align-left {
+    justify-content: flex-end;
+  }
+}
